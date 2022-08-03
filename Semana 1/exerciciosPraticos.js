@@ -1,5 +1,6 @@
 /* -- Exercícios práticos -- */
 const prompt = require('prompt-sync')();
+
 //1
 console.log('\nExercício 1');
 
