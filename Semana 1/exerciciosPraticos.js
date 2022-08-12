@@ -334,7 +334,7 @@ console.log('Exercício 24');
 
 let salarioPJ = prompt('Digite o salário oferecido pela PJ?');
 let salarioCLT = prompt('Digite o salário oferecido pela CLT?');
-let salarioSomadoCLT = ((salarioCLT * + 1.08) * 13) + 700;
+let salarioSomadoCLT = ((salarioCLT * + 0.08) * 13) + 700;
 let salarioSomadoPJ = salarioPJ * 12;
 
 console.log('O salário anual pela PJ é de ' + parseInt(salarioSomadoPJ).toFixed(2));
