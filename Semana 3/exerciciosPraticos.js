@@ -253,7 +253,7 @@ const senioridadeDecrescente = bd => {
 senioridadeDecrescente(bd);
 console.log(bd);
 //11
-console.log('Exercício 11 - erro ao printar compracao de precos\n');
+console.log('Exercício 11:\n');
 
 const livraria = [
     { cod: "8568014003", nome: "mais esperto que o diabo", autor: "Napoleon Hill", valor: 24.6, quantidadeVendido: 17675, },
@@ -350,10 +350,10 @@ const maisVendidos = (livraria, num) => {
 }
 //printBooksList(maisVendidos(livraria, 5));
 
-/*erro*/const comparaPrecoMaior = (livraria, preco) => {
+const comparaPrecoMaior = (livraria, preco) => {
     let arrPrecoMaior = [];
     for (i = 0; i < livraria.length; i++) {
-        if (livraria[i].preco >= preco) {
+        if (livraria[i].valor >= preco) {
             arrPrecoMaior.push(livraria[i]);
         }
     }
@@ -361,12 +361,12 @@ const maisVendidos = (livraria, num) => {
     return arrPrecoMaior;
 }
 
-printBooksList(comparaPrecoMaior(livraria, 5));
+//printBooksList(comparaPrecoMaior(livraria, 60));
 
-/*erro*/const comparaPrecoMenor = (livraria, preco) => {
+const comparaPrecoMenor = (livraria, preco) => {
     let arrPrecoMenor = [];
     for (i = 0; i < livraria.length; i++) {
-        if (livraria[i].preco <= preco) {
+        if (livraria[i].valor <= preco) {
             arrPrecoMenor.push(livraria[i]);
         }
     }
@@ -374,7 +374,7 @@ printBooksList(comparaPrecoMaior(livraria, 5));
     return arrPrecoMenor;
 }
 
-printBooksList(comparaPrecoMenor(livraria, 50));
+//printBooksList(comparaPrecoMenor(livraria, 50));
 
 //12
 console.log('Exercício 12');
